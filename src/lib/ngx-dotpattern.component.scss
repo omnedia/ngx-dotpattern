@@ -1,24 +1,28 @@
 .om-dotpattern {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    --om-dotpattern-color: hsla(0, 0%, 64%, .8);
+  --om-dotpattern-color: hsla(0, 0%, 64%, 0.8);
 
-    .om-dotpattern-background {
-        position: absolute;
-        pointer-events: none;
-        height: 100%;
-        width: 100%;
+  .om-dotpattern-background {
+    position: absolute;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
 
-        svg {
-            pointer-events: none;
-            inset: 0;
-            height: 100%;
-            width: 100%;
-            fill: var(--om-dotpattern-color);
+    svg {
+      pointer-events: none;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      fill: var(--om-dotpattern-color);
 
-            -webkit-mask-image: radial-gradient(300px circle at center, #fff, transparent);
-            mask-image: radial-gradient(300px circle at center, #fff, transparent);
-        }
+      -webkit-mask-image: radial-gradient(
+        500px circle at center,
+        #fff,
+        transparent
+      );
+      mask-image: radial-gradient(500px circle at center, #fff, transparent);
     }
+  }
 }
