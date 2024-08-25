@@ -13,7 +13,7 @@ export class NgxDotpatternComponent {
   styleClass?: string;
 
   @Input("patternColor")
-  set meteorRotation(color: string) {
+  set patternColor(color: string) {
     this.style["--om-dotpattern-color"] = color;
   }
 
