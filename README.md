@@ -1,5 +1,13 @@
 # ngx-dotpattern
 
+<a href="https://ngxui.com" target="_blank" style="display: flex;gap: .5rem;align-items: center;cursor: pointer; padding: 0 0 0 0; height: fit-content;">
+  <img src="https://ngxui.com/assets/img/ngxui-logo.png" style="width: 64px;height: 64px;">
+  <p style="font-weight: bold; padding: 0; margin: 0; font-size: 4rem">NGXUI</p>
+</a>
+
+This Library is part of the NGXUI ecosystem. <br>
+View all available components at https://ngxui.com
+
 `@omnedia/ngx-dotpattern` is an Angular library that provides a customizable dot pattern background effect for your Angular components. The component creates a pattern of dots across the background, with the color and styling easily configurable, making it an eye-catching visual element for your application.
 
 ## Features
@@ -21,21 +29,23 @@ npm install @omnedia/ngx-dotpattern
 Import the `NgxDotpatternComponent` in your Angular module or component:
 
 ```typescript
-import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
+import {NgxDotpatternComponent} from '@omnedia/ngx-dotpattern';
 
 @Component({
   ...
-  imports: [
-    ...
-    NgxDotpatternComponent,
-  ],
+    imports:
+[
   ...
+    NgxDotpatternComponent,
+],
+...
 })
 ```
 
 Use the component in your template:
 
 ```html
+
 <om-dotpattern
   [patternColor]="'#ffcc00'"
   styleClass="custom-pattern-class"
@@ -47,6 +57,7 @@ Use the component in your template:
 ## API
 
 ```html
+
 <om-dotpattern
   [patternColor]="patternColor"
   styleClass="your-custom-class"
@@ -61,6 +72,7 @@ Use the component in your template:
 ## Example
 
 ```html
+
 <om-dotpattern
   [patternColor]="'#00ffcc'"
   styleClass="dotpattern-background"
