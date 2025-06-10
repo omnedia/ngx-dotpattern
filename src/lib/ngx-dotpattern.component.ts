@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 
 @Component({
   selector: 'om-dotpattern',
@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
   imports: [CommonModule],
   templateUrl: "./ngx-dotpattern.component.html",
   styleUrl: "./ngx-dotpattern.component.scss",
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NgxDotpatternComponent {
   @Input("styleClass")
